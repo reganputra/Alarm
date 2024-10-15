@@ -30,6 +30,7 @@
             android:layout_height="wrap_content"
             app:icon="@drawable/ic_date_range" />
 
+
         <TextView
             android:id="@+id/tv_once_date"
             android:layout_width="wrap_content"
@@ -65,7 +66,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:hint="@string/alarm_message"
-        android:importantForAutofill="no"
         android:inputType="text" />
 
     <Button
@@ -84,6 +84,7 @@
         android:textStyle="bold" />
 
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
@@ -110,7 +111,30 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:hint="@string/alarm_message"
-        android:importantForAutofill="no"
         android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel_repeating_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="@string/cancel_alarm" />
+
+        <Button
+            android:id="@+id/btn_set_repeating_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:text="@string/set_repeating_alarm" />
+
+    </LinearLayout>
 
 </LinearLayout>
